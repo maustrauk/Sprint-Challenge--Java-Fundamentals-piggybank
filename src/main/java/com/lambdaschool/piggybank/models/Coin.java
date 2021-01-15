@@ -64,10 +64,6 @@ public class Coin {
         this.quantity = quantity;
     }
 
-    public double getMoney() {
-        return value * quantity;
-    }
-
     @Override
     public String toString() {
         return "Coin{" +

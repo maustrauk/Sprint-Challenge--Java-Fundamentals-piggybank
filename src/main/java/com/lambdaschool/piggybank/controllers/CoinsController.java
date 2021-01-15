@@ -22,6 +22,12 @@ public class CoinsController {
         List<Coin> myList = new ArrayList<>();
         coinsRepository.findAll().iterator().forEachRemaining(myList::add);
 
+        getMoney(myList);
+
+        return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+    private void getMoney(List<Coin> myList) {
         int quantity;
         String formattedName;
         double sum=0;
@@ -29,7 +35,7 @@ public class CoinsController {
         for (Coin coin : myList) {
             quantity = coin.getQuantity();
 
-            sum += coin.getMoney();
+            sum += quantity * coin.getValue();
 
             if (quantity == 1) {
                 formattedName = coin.getName();
@@ -41,9 +47,5 @@ public class CoinsController {
         }
 
         System.out.println("The piggy bank holds " + sum);
-
-
-
-        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
