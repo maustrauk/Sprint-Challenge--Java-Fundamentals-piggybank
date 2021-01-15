@@ -18,16 +18,10 @@ public class CoinsController {
 
     //http://localhost:2019/total
     @GetMapping(value = "/total", produces = "application/json")
-    public ResponseEntity<?> showAllCoins() {
+    public ResponseEntity<?> getMoney() {
         List<Coin> myList = new ArrayList<>();
         coinsRepository.findAll().iterator().forEachRemaining(myList::add);
 
-        getMoney(myList);
-
-        return new ResponseEntity<>(HttpStatus.OK);
-    }
-
-    private void getMoney(List<Coin> myList) {
         int quantity;
         String formattedName;
         double sum=0;
@@ -47,5 +41,7 @@ public class CoinsController {
         }
 
         System.out.println("The piggy bank holds " + sum);
+
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
