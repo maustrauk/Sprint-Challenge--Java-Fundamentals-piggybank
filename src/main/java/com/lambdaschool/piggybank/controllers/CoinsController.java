@@ -29,7 +29,7 @@ public class CoinsController {
         for (Coin coin : myList) {
             quantity = coin.getQuantity();
 
-            sum += quantity * coin.getValue();
+            sum += coin.getMoney();
 
             if (quantity == 1) {
                 formattedName = coin.getName();
@@ -44,6 +44,6 @@ public class CoinsController {
 
 
 
-        return new ResponseEntity<>( HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }
