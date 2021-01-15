@@ -21,7 +21,7 @@ public class CoinsController {
     public ResponseEntity<?> total() {
         List<Coin> myList = new ArrayList<>();
         coinsRepository.findAll().iterator().forEachRemaining(myList::add);
-        
+
         return getMoney(myList);
     }
 

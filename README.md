@@ -23,9 +23,32 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how you took advantage of Java's Object Oriented approach to solve the sprint challenge.
+
+A:
+I had used classes and public and private methods in that classes by completing this sprint.
+
 2. Explain the three steps needed to run a Java application (using the JDK) including what each step does and how those step correlate to running a JavaScript application.
+
+A:
+Step 1: Write code on Java (It should have extension .java).
+Step 2: Compile that code by using javac. The returning file should have extension .class.
+Step 3: Run code by creating Java archive file (*.jar) from binary program code (*.class) and runing it.
+
 3. Explain how Java being a strongly typed language affected you solution.
+
+A:
+When I am creating a variable, I need to define it type to set exact amount of memory that it takes from system.
+
+
 4. Can you explain the differences between Abstract Classes and Interfaces including how they are used in your application?
+
+A:
+Abstract class: is a restricted class that cannot be used to create objects (to access it, it must be inherited from another class).
+Interface is a completely "abstract class" that is used to group related methods with empty bodies.
+I have use CoinsRepository as interface that extends CrudRepository abstract class.
+
+
+
 
 ## Instructions
 
