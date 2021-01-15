@@ -31,18 +31,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Start with the provided piggybank application
-- [ ] Push commits: `git push -u origin <firstName-lastName>`
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [*] Create a forked copy of this project
+- [*] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [*] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [*] Start with the provided piggybank application
+- [*] Push commits: `git push -u origin <firstName-lastName>`
+- [*] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 
 [![Video on how to set up your project](https://img.youtube.com/vi/Bw55xlQGQoQ/0.jpg)](https://youtu.be/Bw55xlQGQoQ)
 
 ### Task 2: Project Requirements
 
-- [ ] You are to start with the provided initial application.
+- [*] You are to start with the provided initial application.
 - This application was created using the wizard in IntelliJ
   - The application is named piggybank
   - You do not need to use services or configuration packages
@@ -50,13 +50,13 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
   - You do need to
     - update the applications.properties configuration file
     - create the necessary packages (at least 3 are needed) and classes
-- [ ] Create a model Coin to represent the table for the piggy bank
+- [*] Create a model Coin to represent the table for the piggy bank
   - Each row in the table contains: (use the provided data.sql as a guide)
     - The number of coins in this group
     - The face value of the coins in the group
     - The name of a single coin
     - The name of more than one coin
-- [ ] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
+- [*] Create an endpoint http://localhost:2019/total that prints to console the contents of the Piggy Bank as follows and returns an HTTP Status of OK:
 
 In your console in IntelliJ you should see:
 
@@ -81,11 +81,11 @@ Note: that when you have more than 1 coin, the plural of the coin's name is prin
 
 ### Required best practices
 
-- [ ] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
-- [ ] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
-- [ ] Consistent quotation usage.
-- [ ] Spell-check.
-- [ ] Schedule time to review, refine and reassess your work.
+- [*] Consistent naming. Examples: variables, functions, Components, and file/folder organization.
+- [*] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
+- [*] Consistent quotation usage.
+- [*] Spell-check.
+- [*] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
