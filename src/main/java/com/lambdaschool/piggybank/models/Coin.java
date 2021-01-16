@@ -64,6 +64,8 @@ public class Coin {
         this.quantity = quantity;
     }
 
+    public double getPrise() { return (quantity * value); }
+
     @Override
     public String toString() {
         return "Coin{" +
